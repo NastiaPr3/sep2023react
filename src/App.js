@@ -1,7 +1,12 @@
+import {Characters} from "./components/characters/Characters";
+import {Characters2} from "./components/characters/Characters2";
 const App = () => {
+
     return (
         <div>
-            App
+            <Characters/>
+            <hr/>
+            <Characters2/>
         </div>
     );
 };
