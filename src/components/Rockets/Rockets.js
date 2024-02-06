@@ -6,7 +6,7 @@ const Rockets = () => {
     let [rockets, setRockets] = useState([]);
 
     useEffect(() => {
-        axios('https://api.spacexdata.com/v3/launches/').then(({data}) => setRockets(data))
+        axios('https://api.spacexdata.com/v3/launches/').then(({data}) => setRockets(data.filter(value => value.launch_year !== '2020')))
     }, []);
 
     return (
