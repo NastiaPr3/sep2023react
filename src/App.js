@@ -1,7 +1,9 @@
+import {Rockets} from "./components/Rockets/Rockets";
+
 const App = () => {
     return (
         <div>
-            App
+            <Rockets/>
         </div>
     );
 };
