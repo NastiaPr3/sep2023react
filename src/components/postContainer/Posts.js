@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
-import {postService} from "../../services/postService";
-import {Post} from "./Post";
 import {useLocation} from "react-router-dom";
+
+import {postService} from "../../services";
+import {Post} from "./Post";
 
 const Posts = () => {
 

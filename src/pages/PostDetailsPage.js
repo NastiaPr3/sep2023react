@@ -1,7 +1,8 @@
-import {PostDetails} from "../components/postContainer/PostDetails";
-import {useEffect, useState} from "react";
-import {postService} from "../services";
 import {Outlet, useParams} from "react-router-dom";
+import {useEffect, useState} from "react";
+
+import {PostDetails} from "../components";
+import {postService} from "../services";
 
 const PostDetailsPage = () => {
     const [postDetails, setPostDetails] = useState(null);
@@ -17,7 +18,9 @@ const PostDetailsPage = () => {
             {
                 postDetails && <PostDetails postDetails={postDetails}/>
             }
+
             <hr/>
+
             <Outlet/>
         </div>
     );

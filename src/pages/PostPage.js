@@ -1,4 +1,4 @@
-import {Posts} from "../components/postContainer/Posts";
+import {Posts} from "../components";
 
 const PostPage = () => {
     return (
