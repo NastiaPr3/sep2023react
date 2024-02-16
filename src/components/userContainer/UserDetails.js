@@ -54,7 +54,6 @@ const UserDetails = ({userDetails}) => {
             {/*    document.body.append(divka)*/}
             {/*}*/}
 
-
             <h2>id: {id}</h2>
             <h2>name: {name}</h2>
             <h2>username: {username}</h2>

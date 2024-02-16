@@ -1,8 +1,9 @@
 import {apiService} from "./apiService";
-import {urls} from "../constants/urls";
+import {urls} from "../constants";
 
 const postService = {
     getAll: () => apiService.get(urls.posts.base),
+    getById: (id) => apiService.get(urls.posts.byId(id)),
     getByUserId: (userId) => apiService.get(urls.posts.byUserId(userId))
 
 }
